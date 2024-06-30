@@ -32,7 +32,7 @@ const About = () => {
   ];
 
   const jobSummary =
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ab, quae accusantium recusandae tempora fuga repellendus sunt nihil ad quis iure nam enim natus obcaecati iusto fugit voluptates iste consecteturLorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto ad natus accusantium vel incidunt tempore dicta officiis dignissimos iste consequatur neque reiciendis iure, quaerat ea voluptatibus. Error, doloribus eius.";
+    "Experienced Full-Stack Developer with a proven track record of designing and implementing high-quality web applications. Proficient in front-end technologies such as HTML, CSS, JavaScript, and frameworks like React. Skilled in back-end development with expertise in Node.js and Java, as well as database management using SQL and NoSQL databases like MySQL and MongoDB. Adept at collaborating with cross-functional teams to deliver robust, scalable, and user-friendly solutions. Strong problem-solving skills and a commitment to continuous learning and professional development.";
   return (
     <section id="about" className="about">
       <PageHeaderContent

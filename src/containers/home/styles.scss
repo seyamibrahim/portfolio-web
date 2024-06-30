@@ -29,10 +29,11 @@
         justify-content: center;
         margin-top: 15px;
 
-        button{
+        .btn{
             cursor: pointer;
             border: 1px solid var(--yellow-theme-main-color);
             padding: 10px 16px;
+            
             background: transparent;
             font-size: 2rem;
             color: var(--yellow-theme-main-color);
@@ -44,6 +45,9 @@
                 color: black;
             }
         }
+        .btn2{
+            margin: 0px 20px;
+        }
         
     }
 }
@@ -52,9 +56,15 @@
 
     .home__text-wrapper h1{
 
-        font-size: 3rem;
-        line-height: 5rem;
+        font-size: 2rem;
+        line-height: 4rem;
         
+    }
+    .home__contact-me{
+        .btn{
+            padding: 8px 10px;
+            font-size: 1rem;
+        }
     }
 }
 

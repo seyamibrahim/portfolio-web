@@ -1,8 +1,9 @@
 import React from "react";
-import { FaReact, FaBars } from "react-icons/fa";
+import {  FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import "./styles.scss";
+import { FcBusinessman } from "react-icons/fc";
 const data = [
   {
     label: "Home",
@@ -21,7 +22,7 @@ const data = [
     to: "/resume",
   },
   {
-    label: "Projects",
+    label: "Portfolio",
     to: "/portfolio",
   },
   {
@@ -41,7 +42,7 @@ const Navbar = ({ handleToggleIcon, toggleIcon }) => {
       <nav className="navbar">
         <div className="navbar__container">
           <Link to={"/"} className="navbar__container__logo">
-            <FaReact size={30}></FaReact>
+          <FcBusinessman size={35}/>
             {/* Seyam Ibrahim */}
           </Link>
         </div>

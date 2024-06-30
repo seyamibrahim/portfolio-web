@@ -2,45 +2,51 @@ import React from "react";
 import "./styles.scss";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
-const Home = ({toggleIcon}) => {
+import mycv from '../../mycv/seyam_resume.pdf'
+const Home = () => {
   const navigate = useNavigate();
 
   const handleNavigatetoContact = () => {
     navigate("/contact");
   };
+  // const handleNavigatetoCV = () => {
+  //   navigate("/cv/seyam_resume.pdf");
+  // };
 
   return (
     <>
-    
-       <section id="home" className="home">
-      <div className="home__text-wrapper">
-        <h1>
-          Hello, I'm Seyam Ibrahim
-          <br />
-          Full Stack Developer
-        </h1>
-      </div>
-      <Animate play duration={1.5} delay={1} 
-      start={{
-        transform : "translateY(550px)"
-      }} 
-      end={{
-        transform: "translatex(0px)"
-      }}
-      >
-        <div className="home__contact-me">
-          <button onClick={handleNavigatetoContact} className="btn">
-            Hire Me
-          </button>
+      <section id="home" className="home">
+        <div className="home__text-wrapper">
+          <h1>
+            Hello, I'm Seyam Ibrahim
+            <br />
+            Full Stack Developer
+          </h1>
         </div>
-      </Animate>
-    </section>
+        <Animate
+          play
+          duration={1.5}
+          delay={1}
+          start={{
+            transform: "translateY(550px)",
+          }}
+          end={{
+            transform: "translatex(0px)",
+          }}
+        >
+          <div className="home__contact-me">
+            <button onClick={handleNavigatetoContact} className="btn">
+              Hire Me
+            </button>
 
-    
-     
+            <a href={mycv} target="_blank"
+                    rel="noreferrer">
+              <button className="btn btn2">My CV</button>
+            </a>
+          </div>
+        </Animate>
+      </section>
     </>
-   
-   
   );
 };
 

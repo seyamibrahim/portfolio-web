@@ -15,7 +15,7 @@ export const data = [
     },
     {
         duration:"2018",
-        title : "HighSchool with Physics Chemistry Maths",
+        title : "HighSchool with Science Maths English ...",
         org : "ADARSH JANTA INTER COLLEGE",
         discription : "I have passed my class 10th standard with 85.8% from UP Board Uttar Pradesh India.",
 

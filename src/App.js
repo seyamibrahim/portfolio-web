@@ -22,13 +22,12 @@ function App() {
 
       {/* navbar */}
       <Navbar handleToggleIcon={handleToggleIcon} toggleIcon={toggleIcon} />
-      
 
       {/* main page content */}
 
       <div className="App__main-page-content">
         <Routes>
-          <Route index path="/" element={ <Home toggleIcon={toggleIcon} />} />
+          <Route index path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/skills" element={<Skills />} />
@@ -36,7 +35,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      
     </div>
   );
 }
