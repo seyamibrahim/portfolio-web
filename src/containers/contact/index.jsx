@@ -4,9 +4,11 @@ import PageHeaderContent from "../../components/pageHeaderContent";
 import { RiContactsFill } from "react-icons/ri";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
-const Contact = () => {
+
+
+const Contact = ({toggleIcon}) => {
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className={`contact ${toggleIcon ? 'activecontact' : ''}`}>
       <PageHeaderContent
         headerText="Contact Me"
         icon={<RiContactsFill size={35} />}

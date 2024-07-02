@@ -11,9 +11,9 @@ import "./styles.scss";
 import { MdCastForEducation } from "react-icons/md";
 import { SiReactiveresume } from "react-icons/si";
 
-const Resume = () => {
+const Resume = ({toggleIcon}) => {
   return (
-    <section id="resume" className="resume">
+    <section id="resume" className={`resume ${toggleIcon ? 'activeresume' : ''}`}>
       <PageHeaderContent
         headerText="My Resume"
         icon={<SiReactiveresume size={35}/>}

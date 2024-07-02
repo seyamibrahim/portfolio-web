@@ -58,27 +58,33 @@
 }
 
 @media only screen and (max-width : 768px){
+    
+    
     .navbar__container__menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 65px;
         left: -110%;
         opacity: 1;
         transition: all 0.5s ease;
 
         &.active{
-            background: #181818;
+            
+            background: black;
             left: 0px;
             opacity: 1;
+            
+            
         }
+        
 
         &__item{
             border-bottom: 1px solid #282828;
             margin: 0px;
-            padding: 20px 0px; 
+            padding: 0px 0px; 
         }
     }
 

@@ -136,3 +136,12 @@
     }
 
 }
+
+@media only screen and (max-width : 768px){
+
+  .portfolio{
+      &.activeportfolio{
+          margin-top: 300px;
+      }
+  }
+}

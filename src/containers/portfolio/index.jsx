@@ -59,7 +59,7 @@ const filterData = [
     label: "Development",
   },
 ];
-const Portfolio = () => {
+const Portfolio = ({toggleIcon}) => {
   const [filteredValue, setFilteredValue] = useState(1);
 
   const [hoveredValue, setHoveredValue] = useState(null);
@@ -78,7 +78,7 @@ const Portfolio = () => {
       ? portfolioData
       : portfolioData.filter((item) => item.id === filteredValue);
   return (
-    <section id="portfolio" className="portfolio">
+    <section id="portfolio" className={`portfolio ${toggleIcon ? 'activeportfolio' : ''}`}>
       <PageHeaderContent
         headerText="My Portfolio"
         icon={<GoProjectSymlink size={30} />}

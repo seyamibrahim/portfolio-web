@@ -1,9 +1,10 @@
 .resume {
   height: 100%;
+  width: 100%;
   .timeline {
     display: flex;
     width: 100%;
-    
+
     padding: 10px;
     &__education {
       display: flex;
@@ -40,7 +41,6 @@
       }
     }
     .vertical__timeline-element-title-wrapper {
-        
       h1 {
         font-size: 25px;
         color: var(--yellow-theme-main-color);
@@ -68,7 +68,25 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .timeline__education {
-    width: 100%;
+  .timeline{
+    .timeline__education {
+      width: 100%;
+      .vertical__timeline-element-title-wrapper{
+        p{
+          font-size: 10px;
+        }
+        h2{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  
+}
+@media only screen and (max-width: 768px) {
+  .resume {
+    &.activeresume {
+      margin-top: 300px;
+    }
   }
 }

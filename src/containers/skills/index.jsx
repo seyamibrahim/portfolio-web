@@ -6,9 +6,9 @@ import { Line } from "rc-progress";
 import "./styles.scss";
 import { Animate } from "react-simple-animate";
 import { GiSkills } from "react-icons/gi";
-const Skills = () => {
+const Skills = ({toggleIcon}) => {
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className={`skills ${toggleIcon ? 'activeskills' : ''}`}>
       <PageHeaderContent
         headerText="My Skills"
         icon={<GiSkills size={35} />}

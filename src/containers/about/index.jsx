@@ -7,7 +7,8 @@ import { FaReact,FaDatabase } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import "./styles.scss";
-const About = () => {
+
+const About = ({toggleIcon}) => {
   const personalDetails = [
     {
       label: "Name :",
@@ -34,7 +35,7 @@ const About = () => {
   const jobSummary =
     "Experienced Full-Stack Developer with a proven track record of designing and implementing high-quality web applications. Proficient in front-end technologies such as HTML, CSS, JavaScript, and frameworks like React. Skilled in back-end development with expertise in Node.js and Java, as well as database management using SQL and NoSQL databases like MySQL and MongoDB. Adept at collaborating with cross-functional teams to deliver robust, scalable, and user-friendly solutions. Strong problem-solving skills and a commitment to continuous learning and professional development.";
   return (
-    <section id="about" className="about">
+    <section id="about" className={`about ${toggleIcon ? 'activeabout' : ''}`}>
       <PageHeaderContent
         headerText="About Me"
         icon={<BsInfoCircleFill size={25} />}

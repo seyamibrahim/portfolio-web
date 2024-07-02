@@ -27,12 +27,12 @@ function App() {
 
       <div className="App__main-page-content">
         <Routes>
-          <Route index path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route index path="/" element={<Home toggleIcon= {toggleIcon}/>} />
+          <Route path="/about" element={<About toggleIcon= {toggleIcon}/>} />
+          <Route path="/resume" element={<Resume toggleIcon= {toggleIcon}/>} />
+          <Route path="/skills" element={<Skills toggleIcon= {toggleIcon}/>} />
+          <Route path="/portfolio" element={<Portfolio toggleIcon= {toggleIcon}/>} />
+          <Route path="/contact" element={<Contact toggleIcon= {toggleIcon}/>} />
         </Routes>
       </div>
     </div>

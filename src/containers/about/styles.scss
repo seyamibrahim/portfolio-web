@@ -136,3 +136,12 @@
         }
     }
 }
+
+@media only screen and (max-width : 768px){
+
+    .about{
+        &.activeabout{
+            margin-top: 300px;
+        }
+    }
+}

@@ -14,10 +14,21 @@
 }
 
 @media only screen and (max-width : 768px){
+    
     .skills__content__wrapper__inner-content{
         width: 80%;
         h1{
             font-size: 1.5rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width : 768px){
+
+    .skills{
+        &.activeskills{
+            margin-top: 300px;
         }
     }
 }
