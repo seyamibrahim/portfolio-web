@@ -45,7 +45,7 @@ const Home = ({toggleIcon}) => {
 
           <a href={mycv} target="_blank"
                   rel="noreferrer">
-            <button className="btn btn2">My CV</button>
+            <button className="btn btn2">Download Resume</button>
           </a>
         </div>
       </Animate>
